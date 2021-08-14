@@ -3,15 +3,14 @@
 int main()
 {
     Blockchain bChain = Blockchain();
+    int i = 1;
 
-    cout << "Mining block 1..." << endl;
-    bChain.AddBlock(Block(1, "Block 1 Data"));
-
-    cout << "Mining block 2..." << endl;
-    bChain.AddBlock(Block(2, "Block 2 Data"));
-
-    cout << "Mining block 3..." << endl;
-    bChain.AddBlock(Block(3, "Block 3 Data"));
+    while (0 != 1) 
+    {
+        cout << "Mining block " << i << "..." << endl;
+        bChain.AddBlock(Block(i, "Block " + to_string(i) + " Data"));
+        i++;
+    }
 
     return 0;
 }
